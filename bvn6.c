@@ -31,7 +31,7 @@ int main() {
     sv[n].id = n+1;
     printf("Nhap ten sv cuoi mang: ");
     fgets(sv[n].name,sizeof(sv[n].name),stdin);
-    sv[n].name[strcspn(sv[n].name,"\n")] = "\0";
+    sv[n].name[strcspn(sv[n].name,"\n")] = '\0';
     
     printf("Nhap tuoi sv cuoi mang: ");
     scanf("%d",&sv[n].age);
@@ -39,7 +39,7 @@ int main() {
     
     printf("Nhap sdt sv cuoi mang: \n");
     fgets(sv[n].phoneNumber,sizeof(sv[n].phoneNumber),stdin);
-    sv[n].phoneNumber[strcspn(sv[n].phoneNumber,"\n")] = "\0";
+    sv[n].phoneNumber[strcspn(sv[n].phoneNumber,"\n")] = '\0';
     n++;
     
     printf("Mang sau khi them sv\n");
@@ -53,3 +53,4 @@ int main() {
     return 0;
 }
     
+
