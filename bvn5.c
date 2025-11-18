@@ -50,6 +50,7 @@ int main() {
 
         printf("Nhap tuoi moi: ");
         scanf("%d", &sv[found].age);
+        getchar();
     }
 
     for (int i = 0; i < n; i++) {
@@ -61,4 +62,5 @@ int main() {
 
     return 0;
 }
+
 
