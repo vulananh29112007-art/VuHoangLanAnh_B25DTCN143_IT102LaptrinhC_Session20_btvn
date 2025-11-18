@@ -12,7 +12,7 @@ int main(){
 	
 	for(int i = 0;i<5;i++){
 		printf("Nhap ten cua sinh vien %d: ",i+1);
-	    fgets(sv[i].name,sizeof(sv),stdin);
+	    fgets(sv[i].name,sizeof(sv[i].name),stdin);
 	    sv[i].name[strcspn(sv[i].name,"\n")] = '\0';
 	    
 		printf("Nhap tuoi cua sinh vien %d: ",i+1);
@@ -20,7 +20,7 @@ int main(){
 	    getchar();
 	    
 		printf("Nhap sdt cua sinh vien %d: ",i+1);
-	    fgets(sv[i].phoneNumber,sizeof(sv),stdin);
+	    fgets(sv[i].phoneNumber,sizeof(sv[i].phoneNumber),stdin);
 	    sv[i].phoneNumber[strcspn(sv[i].phoneNumber,"\n")] = '\0';
 	}
 	
@@ -35,4 +35,5 @@ int main(){
 
    return 0;
 }
+
 
