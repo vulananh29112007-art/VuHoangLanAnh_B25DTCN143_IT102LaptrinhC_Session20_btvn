@@ -43,19 +43,24 @@ int main() {
     	printf("khong tim thay");
 	}else{
 		for(int i = n; i>pos;i--){
+			sv[i] = sv[i-1];
+		}
 			printf("ID moi: ");
 			scanf("%d",&sv[pos].id);
 			getchar();
+		
 			printf("Ten sv moi: ");
 			fgets(sv[pos].name,sizeof(sv[pos].name),stdin);
 			sv[pos].name[strcspn(sv[pos].name,"\n")] = '\0';
+		
 			printf("Tuoi sv moi: ");
 			scanf("%d",sv[pos].age);
 			getchar();
+		
 			printf("SDT sv moi: ");
 			fgets(sv[pos].phoneNumber,sizeof(sv[pos].phoneNumber),stdin);
 			sv[pos].phoneNumber[strcspn(sv[pos].phoneNumber,"\n")] = '\0';
-		}
+			n++;
 	}
 	printf("-----Mang sau khi chen-----\n");
 	for(int i = 0;i<n;i++){
@@ -68,3 +73,4 @@ int main() {
     return 0;
     
 }
+
